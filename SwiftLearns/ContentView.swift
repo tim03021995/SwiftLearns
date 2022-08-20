@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    let en = EN.shard
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Topic").font(.largeTitle)
+            ScrollView {
+                LazyVStack(alignment: .leading) {
+                    Button(en.mainListTitle.first!) {
+                        
+                    }
+                }.padding(.leading)
+            }
         }
-        .padding()
+
+
     }
 }
 
