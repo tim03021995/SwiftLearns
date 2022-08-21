@@ -10,18 +10,19 @@ import SwiftUI
 struct ContentView: View {
     let en = EN.shard
     var body: some View {
-        VStack {
-            Text("Topic").font(.largeTitle)
-            ScrollView {
-                LazyVStack(alignment: .leading) {
-                    Button(en.mainListTitle.first!) {
-                        
-                    }
-                }.padding(.leading)
-            }
-        }
-
-
+        ZStack {
+            LazyVStack {
+                Text("Topic").font(.largeTitle).foregroundColor(.white).fontWeight(.bold)
+                ScrollView {
+                    LazyVStack(alignment: .leading) {
+                        Button(en.mainListTitle.first!) {
+                            
+                        }.padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial))
+                    }.padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial))
+                }
+                Spacer()
+            }.padding(10)
+        }.background(Image("galaxy-wallpaper"))
     }
 }
 
