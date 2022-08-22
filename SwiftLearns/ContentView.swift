@@ -11,18 +11,22 @@ struct ContentView: View {
     let en = EN.shard
     var body: some View {
         ZStack {
-            LazyVStack {
+            Image("mainWallpaper").resizable()
+                .scaledToFill()
+                .frame(minWidth: 0,  maxWidth: .infinity, minHeight: 0,  maxHeight: .infinity)
+                .ignoresSafeArea()
+            VStack {
                 Text("Topic").font(.largeTitle).foregroundColor(.white).fontWeight(.bold)
+                
                 ScrollView {
                     LazyVStack(alignment: .leading) {
                         Button(en.mainListTitle.first!) {
                             
-                        }.padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial))
-                    }.padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial))
-                }
-                Spacer()
+                        }.frame(width: 100,height: 100).padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial)).foregroundColor(.buttonTextColor)
+                    }
+                }.frame(width: .infinity, height: .infinity)
             }.padding(10)
-        }.background(Image("galaxy-wallpaper"))
+        }
     }
 }
 

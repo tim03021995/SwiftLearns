@@ -9,5 +9,5 @@ import Foundation
 
 class EN {
     static let shard = EN()
-    let mainListTitle:[String] = ["VStack, ZStack, HStack"]
+    let mainListTitle:[String] = ["Stack And Group"]
 }
