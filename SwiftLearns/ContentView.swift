@@ -8,24 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingTopic = false
+    @State private var showingTopic2 = false
+    @State private var showingTopic3 = false
     let en = EN.shard
     var body: some View {
         ZStack {
             Image("mainWallpaper").resizable()
                 .scaledToFill()
-                .frame(minWidth: 0,  maxWidth: .infinity, minHeight: 0,  maxHeight: .infinity)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .ignoresSafeArea()
-            VStack {
+            VStack (){
                 Text("Topic").font(.largeTitle).foregroundColor(.white).fontWeight(.bold)
-                
                 ScrollView {
                     LazyVStack(alignment: .leading) {
-                        Button(en.mainListTitle.first!) {
+                        LazyHStack(alignment: .top,spacing: 20) {
+                            Button("VStack") {
+                                showingTopic.toggle()
+                            }.frame(width: 100, height: 100).padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial)).foregroundColor(.buttonTextColor).sheet(isPresented: $showingTopic) {
+                                StackAndGroupView()
+                            }
+                            Button("LazyVStack") {
+                                showingTopic2.toggle()
+                            }.frame(width: 100, height: 100).padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial)).foregroundColor(.buttonTextColor).sheet(isPresented: $showingTopic2) {
+                                LazyStackTopicView()
+                            }
                             
-                        }.frame(width: 100,height: 100).padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial)).foregroundColor(.buttonTextColor)
+                            Button("ZStack") {
+                                showingTopic.toggle()
+                            }.frame(width: 100, height: 100).padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial)).foregroundColor(.buttonTextColor).sheet(isPresented: $showingTopic) {
+                                StackAndGroupView()
+                            }
+                            
+                            Button("NavigationStack"){
+                                showingTopic.toggle()
+                            }.frame(width: 100, height: 100).padding().background(RoundedRectangle(cornerRadius: 20).fill(Material.ultraThinMaterial)).foregroundColor(.buttonTextColor).sheet(isPresented: $showingTopic) {
+                                StackAndGroupView()
+                            }
+                        }
+   
                     }
-                }.frame(width: .infinity, height: .infinity)
-            }.padding(10)
+                }
+            }.padding()
         }
     }
 }

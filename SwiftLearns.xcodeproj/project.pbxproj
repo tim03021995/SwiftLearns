@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE01AF0128BE4C170032F867 /* NavigationDestinationSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01AF0028BE4C170032F867 /* NavigationDestinationSimple.swift */; };
+		AE01AF0328BE56E70032F867 /* NavigationStackSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01AF0228BE56E70032F867 /* NavigationStackSimple.swift */; };
+		AE01AF0528BE5D660032F867 /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01AF0428BE5D660032F867 /* NavigationPath.swift */; };
+		AE3512A028B5B79A002C84D0 /* Label+FocalPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35129F28B5B79A002C84D0 /* Label+FocalPoint.swift */; };
+		AE3512A328B5FA72002C84D0 /* LazyStackTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3512A228B5FA71002C84D0 /* LazyStackTopic.swift */; };
 		AE5A43B228AE36CE009387A0 /* SwiftLearnsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A43B128AE36CE009387A0 /* SwiftLearnsApp.swift */; };
 		AE5A43B428AE36CE009387A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A43B328AE36CE009387A0 /* ContentView.swift */; };
 		AE5A43B628AE36D0009387A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A43B528AE36D0009387A0 /* Assets.xcassets */; };
 		AE5A43B928AE36D0009387A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A43B828AE36D0009387A0 /* Preview Assets.xcassets */; };
 		AE5A43C028B06F93009387A0 /* en.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A43BF28B06F93009387A0 /* en.swift */; };
 		AE5A43C228B1D19C009387A0 /* UIColor+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A43C128B1D19C009387A0 /* UIColor+CustomColor.swift */; };
+		AE5A43C528B3459B009387A0 /* StacksTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A43C428B3459B009387A0 /* StacksTopic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE01AF0028BE4C170032F867 /* NavigationDestinationSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationSimple.swift; sourceTree = "<group>"; };
+		AE01AF0228BE56E70032F867 /* NavigationStackSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackSimple.swift; sourceTree = "<group>"; };
+		AE01AF0428BE5D660032F867 /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
+		AE35129F28B5B79A002C84D0 /* Label+FocalPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+FocalPoint.swift"; sourceTree = "<group>"; };
+		AE3512A228B5FA71002C84D0 /* LazyStackTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyStackTopic.swift; sourceTree = "<group>"; };
 		AE5A43AE28AE36CE009387A0 /* SwiftLearns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLearns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A43B128AE36CE009387A0 /* SwiftLearnsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnsApp.swift; sourceTree = "<group>"; };
 		AE5A43B328AE36CE009387A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +34,7 @@
 		AE5A43B828AE36D0009387A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE5A43BF28B06F93009387A0 /* en.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = en.swift; sourceTree = "<group>"; };
 		AE5A43C128B1D19C009387A0 /* UIColor+CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColor.swift"; sourceTree = "<group>"; };
+		AE5A43C428B3459B009387A0 /* StacksTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksTopic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE01AEFF28BE4B520032F867 /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				AE01AF0028BE4C170032F867 /* NavigationDestinationSimple.swift */,
+				AE01AF0228BE56E70032F867 /* NavigationStackSimple.swift */,
+				AE01AF0428BE5D660032F867 /* NavigationPath.swift */,
+			);
+			path = NavigationStack;
+			sourceTree = "<group>";
+		};
+		AE35129E28B5B6F3002C84D0 /* style */ = {
+			isa = PBXGroup;
+			children = (
+				AE35129F28B5B79A002C84D0 /* Label+FocalPoint.swift */,
+			);
+			path = style;
+			sourceTree = "<group>";
+		};
 		AE5A43A528AE36CE009387A0 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +85,11 @@
 		AE5A43B028AE36CE009387A0 /* SwiftLearns */ = {
 			isa = PBXGroup;
 			children = (
+				AE35129E28B5B6F3002C84D0 /* style */,
 				AE5A43B128AE36CE009387A0 /* SwiftLearnsApp.swift */,
 				AE5A43B328AE36CE009387A0 /* ContentView.swift */,
-				AE5A43BF28B06F93009387A0 /* en.swift */,
 				AE5A43C128B1D19C009387A0 /* UIColor+CustomColor.swift */,
+				AE5A43C328B3456B009387A0 /* Topics */,
 				AE5A43B528AE36D0009387A0 /* Assets.xcassets */,
 				AE5A43B728AE36D0009387A0 /* Preview Content */,
 			);
@@ -71,6 +102,25 @@
 				AE5A43B828AE36D0009387A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE5A43C328B3456B009387A0 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A43BF28B06F93009387A0 /* en.swift */,
+				AE01AEFF28BE4B520032F867 /* NavigationStack */,
+				AE5A43C628B35D83009387A0 /* Stacks */,
+			);
+			path = Topics;
+			sourceTree = "<group>";
+		};
+		AE5A43C628B35D83009387A0 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A43C428B3459B009387A0 /* StacksTopic.swift */,
+				AE3512A228B5FA71002C84D0 /* LazyStackTopic.swift */,
+			);
+			path = Stacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE01AF0528BE5D660032F867 /* NavigationPath.swift in Sources */,
+				AE5A43C528B3459B009387A0 /* StacksTopic.swift in Sources */,
+				AE01AF0328BE56E70032F867 /* NavigationStackSimple.swift in Sources */,
 				AE5A43B428AE36CE009387A0 /* ContentView.swift in Sources */,
+				AE01AF0128BE4C170032F867 /* NavigationDestinationSimple.swift in Sources */,
+				AE3512A328B5FA72002C84D0 /* LazyStackTopic.swift in Sources */,
 				AE5A43C028B06F93009387A0 /* en.swift in Sources */,
+				AE3512A028B5B79A002C84D0 /* Label+FocalPoint.swift in Sources */,
 				AE5A43C228B1D19C009387A0 /* UIColor+CustomColor.swift in Sources */,
 				AE5A43B228AE36CE009387A0 /* SwiftLearnsApp.swift in Sources */,
 			);
