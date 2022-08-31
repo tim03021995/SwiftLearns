@@ -19,6 +19,9 @@
 		AE5A43C028B06F93009387A0 /* en.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A43BF28B06F93009387A0 /* en.swift */; };
 		AE5A43C228B1D19C009387A0 /* UIColor+CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A43C128B1D19C009387A0 /* UIColor+CustomColor.swift */; };
 		AE5A43C528B3459B009387A0 /* StacksTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A43C428B3459B009387A0 /* StacksTopic.swift */; };
+		AEA6588E28BF24F00048925F /* HitList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA6588C28BF24F00048925F /* HitList.xcdatamodeld */; };
+		AEA6589028BF26330048925F /* CoreDataSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6588F28BF26330048925F /* CoreDataSimple.swift */; };
+		AEA6589228BF33EF0048925F /* CoreDataBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6589128BF33EF0048925F /* CoreDataBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		AE5A43BF28B06F93009387A0 /* en.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = en.swift; sourceTree = "<group>"; };
 		AE5A43C128B1D19C009387A0 /* UIColor+CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColor.swift"; sourceTree = "<group>"; };
 		AE5A43C428B3459B009387A0 /* StacksTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksTopic.swift; sourceTree = "<group>"; };
+		AEA6588D28BF24F00048925F /* HitList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HitList.xcdatamodel; sourceTree = "<group>"; };
+		AEA6588F28BF26330048925F /* CoreDataSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSimple.swift; sourceTree = "<group>"; };
+		AEA6589128BF33EF0048925F /* CoreDataBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5A43BF28B06F93009387A0 /* en.swift */,
+				AEA6588B28BF24930048925F /* CoreData */,
 				AE01AEFF28BE4B520032F867 /* NavigationStack */,
 				AE5A43C628B35D83009387A0 /* Stacks */,
 			);
@@ -121,6 +128,16 @@
 				AE3512A228B5FA71002C84D0 /* LazyStackTopic.swift */,
 			);
 			path = Stacks;
+			sourceTree = "<group>";
+		};
+		AEA6588B28BF24930048925F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AEA6588C28BF24F00048925F /* HitList.xcdatamodeld */,
+				AEA6588F28BF26330048925F /* CoreDataSimple.swift */,
+				AEA6589128BF33EF0048925F /* CoreDataBook.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +218,11 @@
 				AE3512A328B5FA72002C84D0 /* LazyStackTopic.swift in Sources */,
 				AE5A43C028B06F93009387A0 /* en.swift in Sources */,
 				AE3512A028B5B79A002C84D0 /* Label+FocalPoint.swift in Sources */,
+				AEA6589028BF26330048925F /* CoreDataSimple.swift in Sources */,
+				AEA6588E28BF24F00048925F /* HitList.xcdatamodeld in Sources */,
 				AE5A43C228B1D19C009387A0 /* UIColor+CustomColor.swift in Sources */,
 				AE5A43B228AE36CE009387A0 /* SwiftLearnsApp.swift in Sources */,
+				AEA6589228BF33EF0048925F /* CoreDataBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +423,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AEA6588C28BF24F00048925F /* HitList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AEA6588D28BF24F00048925F /* HitList.xcdatamodel */,
+			);
+			currentVersion = AEA6588D28BF24F00048925F /* HitList.xcdatamodel */;
+			path = HitList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AE5A43A628AE36CE009387A0 /* Project object */;
 }
